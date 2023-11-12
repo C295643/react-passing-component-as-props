@@ -1,0 +1,21 @@
+.App {
+    font-family: sans-serif;
+    text-align: left;
+  }
+  
+  .button {
+    padding: 4px 8px;
+    background: #b7b7b7;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  
+    &:hover {
+      background: navy;
+      color: white;
+    }
+  }
+  
+  .button-icon {
+    margin-right: 4px;
+  }
