@@ -3,6 +3,7 @@ import { ButtonWithIconElement } from "./components/ButtonWithIconElement";
 import { ButtonWithIconComponent } from "./components/ButtonWithIconComponent";
 import { ButtonWithIconFunction } from "./components/ButtonWithIconFunction";
 import CheckBox from "@mui/icons-material/CheckBox";
+import { ButtonWithIconElementList } from "./components/ButtonWithIconElementList";
 
 const CheckBoxHoverIcon = ({
   attributes,
@@ -37,6 +38,16 @@ function App() {
       >
         Button with icon as a Function
       </ButtonWithIconFunction>
+      <br />
+      <ButtonWithIconElementList
+        iconList={[
+          <CheckBoxHoverIcon />,
+          <CheckBoxHoverIcon />,
+          <CheckBoxHoverIcon />,
+        ]}
+      >
+        Button with icons as a List of Elements
+      </ButtonWithIconElementList>
     </div>
   );
 }
